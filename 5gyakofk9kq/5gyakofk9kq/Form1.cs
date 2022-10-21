@@ -1,4 +1,5 @@
-﻿using _5gyakofk9kq.MnbServiceReference;
+﻿using _5gyakofk9kq.Entities;
+using _5gyakofk9kq.MnbServiceReference;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,8 +18,11 @@ namespace _5gyakofk9kq
         {
             InitializeComponent();
             Call();
-            
+            dataGridView1.DataSource = Rates;
+
+
         }
+        BindingList<RateData> Rates = new BindingList<RateData>();
 
         private string Call()
         {
