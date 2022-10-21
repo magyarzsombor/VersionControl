@@ -16,6 +16,12 @@ namespace _5gyakofk9kq
         public Form1()
         {
             InitializeComponent();
+            Call();
+            
+        }
+
+        private string Call()
+        {
             var mnbService = new MNBArfolyamServiceSoapClient();
 
             var request = new GetExchangeRatesRequestBody()
@@ -28,8 +34,10 @@ namespace _5gyakofk9kq
             var response = mnbService.GetExchangeRates(request);
 
             var result = response.GetExchangeRatesResult;
-        }
+            return result;
 
+
+        }
 
 
 
