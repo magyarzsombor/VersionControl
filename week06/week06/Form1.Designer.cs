@@ -43,10 +43,12 @@
             // 
             // createTimer
             // 
+            this.createTimer.Enabled = true;
             this.createTimer.Interval = 3000;
             // 
             // conveyorTimer
             // 
+            this.conveyorTimer.Enabled = true;
             this.conveyorTimer.Interval = 10;
             // 
             // Form1
