@@ -25,6 +25,7 @@ namespace _9hét
             BirthProbabilities = GetBirthProbabilities(@"C:\Users\Nappali\Documents\Visual Studio 2022\Templates\születés.csv");
             DeathProbabilities = GetDeathProbabilities(@"C:\Users\Nappali\Documents\Visual Studio 2022\Templates\halál.csv");
         }
+        Random rng = new Random(1111);
 
         public List<Person> GetPopulation(string csvpath)
 
