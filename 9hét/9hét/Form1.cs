@@ -24,6 +24,24 @@ namespace _9hét
             Population = GetPopulation(@"C:\Users\Nappali\Documents\Visual Studio 2022\Templates\nép.csv");
             BirthProbabilities = GetBirthProbabilities(@"C:\Users\Nappali\Documents\Visual Studio 2022\Templates\születés.csv");
             DeathProbabilities = GetDeathProbabilities(@"C:\Users\Nappali\Documents\Visual Studio 2022\Templates\halál.csv");
+
+            for (int year = 2005; year <= 2024; year++)
+            {
+         
+                for (int i = 0; i < Population.Count; i++)
+                {
+                   
+                }
+
+                int nbrOfMales = (from x in Population
+                                  where x.Gender == Gender.Male && x.IsAlive
+                                  select x).Count();
+                int nbrOfFemales = (from x in Population
+                                    where x.Gender == Gender.Female && x.IsAlive
+                                    select x).Count();
+                Console.WriteLine(
+                    string.Format("Év:{0} Fiúk:{1} Lányok:{2}", year, nbrOfMales, nbrOfFemales));
+            }
         }
         Random rng = new Random(1111);
 
