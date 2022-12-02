@@ -30,7 +30,7 @@ namespace _9hét
          
                 for (int i = 0; i < Population.Count; i++)
                 {
-                   
+                    
                 }
 
                 int nbrOfMales = (from x in Population
@@ -124,6 +124,16 @@ namespace _9hét
 
             return deathProbabilities;
 
+        }
+
+
+        private void SimStep(int year, Person person)
+        { 
+        
+        
+        
+        
+        
         }
     }
 }
